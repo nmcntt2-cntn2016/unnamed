@@ -37,15 +37,12 @@
 * Giúp tiết kiệm chi phí xây dựng phòng thí nghiệm, mua các chất hóa học.
 
 ## Tính năng :
-* Cung cấp 
-	* Tìm kiếm các phương trình hóa học.
-	* Các hiện tượng, đặc điểm của thí nghiệm được mô tả một cách trực quan thông qua hình ảnh/ video.
+* Cung cấp công cụ học tập có các chức năng:
+	* Mô tả các hiện tượng, đặc điểm của thí nghiệm một cách trực quan thông qua hình ảnh động / video.
 	* Tìm kiếm thông tin của một chất nhất định.
-	* Tự động cân bằng/ chỉnh sửa hệ số của phương trình được nhập vào.
-
+	* Tìm kiếm và tự động cân bằng/ chỉnh sửa hệ số của phương trình được nhập vào.
+	* Diễn đàn trao đổi kiến thức.
 ## Cách thực hiện :
- * Sử dụng nền tảng HTML\CSS, javascript để xây dựng giao diện trực quan.
- * Sử dụng mã nguồn mở như myBB để xây dựng diễn đàn.
 
 # #2. FA Skipper - Mạng xã hội mai mối
  <img src="http://i.imgur.com/x4gq3NS.jpg" align="center">
