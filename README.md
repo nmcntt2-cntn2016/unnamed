@@ -23,16 +23,19 @@
 	    <td>Nguyễn Thị Tình</td>
 	  </tr>
 	</table>
-# #1. SwiftChem - Trang web mô tả thí nghiệm hóa học<br />
+	
+## 1. SwiftChem - Trang web mô tả thí nghiệm hóa học<br />
  <img src="http://i.imgur.com/aFbfcOb.jpg" align="center">
 ## Thực trạng :
 * Thực trạng, một số trường ở Việt Nam không có đủ cơ sở vật chất cho học sinh làm thí nghiệm.
 * Gần đây xảy ra nhiều vụ nổ hóa chất gây thiệt hại về tài sản và tính mạng con người.
 * Ở Việt Nam chưa có nhiều giải pháp để giải quyết các vấn đề này.
 * Một số app và trang web (ChemLab, phET interactive simulations...) có các tính năng thí nghiệm nhưng khó sử dụng, không trực quan và sử dụng nhiều thuật ngữ chuyên ngành.
+
 ## Mục đích :
 * Giúp các bạn học sinh, sinh viên tiết kiệm thời gian và tăng sự hứng thú khi học hóa.
 * Giúp tiết kiệm chi phí xây dựng phòng thí nghiệm, mua các chất hóa học.
+
 ## Tính năng :
 * Cung cấp 
 	* Tìm kiếm các phương trình hóa học.
