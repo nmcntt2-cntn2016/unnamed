@@ -24,8 +24,9 @@
 	  </tr>
 	</table>
 	
-## 1. SwiftChem - Trang web mô tả thí nghiệm hóa học<br />
+## 1. SwiftChem - Trang web mô tả thí nghiệm hóa học
  <img src="http://i.imgur.com/aFbfcOb.jpg" align="center">
+ 
 ## Thực trạng :
 * Thực trạng, một số trường ở Việt Nam không có đủ cơ sở vật chất cho học sinh làm thí nghiệm.
 * Gần đây xảy ra nhiều vụ nổ hóa chất gây thiệt hại về tài sản và tính mạng con người.
@@ -42,6 +43,8 @@
 	* Tìm kiếm thông tin của một chất nhất định.
 	* Tìm kiếm và tự động cân bằng/ chỉnh sửa hệ số của phương trình được nhập vào.
 	* Diễn đàn trao đổi kiến thức.
+	* Tìm cách điều chế từ chất này qua chất khác.
+	* Phân biệt các chất được nhập vào ( nếu được ).
 ## Cách thực hiện :
 
 # #2. FA Skipper - Mạng xã hội mai mối
