@@ -24,7 +24,7 @@
 	  </tr>
 	</table>
 	
-## SwiftChem - Trang web mô tả thí nghiệm hóa học
+## SwiftCHEM - Trang web mô tả thí nghiệm hóa học
  <img src="http://i.imgur.com/aFbfcOb.jpg" align="center">
  
  <ahref src="http://nmcntt2-cntn2016.github.io/unnamed">
