@@ -24,8 +24,10 @@
 	  </tr>
 	</table>
 	
-## 1. SwiftChem - Trang web mô tả thí nghiệm hóa học
+## SwiftChem - Trang web mô tả thí nghiệm hóa học
  <img src="http://i.imgur.com/aFbfcOb.jpg" align="center">
+ 
+ <ahref src="http://nmcntt2-cntn2016.github.io/unnamed">
  
 ## Thực trạng :
 * Thực trạng, một số trường ở Việt Nam không có đủ cơ sở vật chất cho học sinh làm thí nghiệm.
@@ -47,16 +49,4 @@
 	* Phân biệt các chất được nhập vào ( nếu được ).
 ## Cách thực hiện :
 
-# #2. FA Skipper - Mạng xã hội mai mối
- <img src="http://i.imgur.com/x4gq3NS.jpg" align="center">
-## Mục đích :
- * Mở rộng mối quan hệ với những người xung quanh mình, để có thể tìm kiếm nửa kia hay chỉ là bạn bè để tâm sự.
 
-## Tính năng :
- * Tìm kiếm các user có nhiều điểm chung về sở thích, thói quen, ...
- * Xác định vị trí của những user gần đó.
- * Cho phép gửi tin nhắn với nhau.
- * Cho phép công khai một số ảnh cá nhân.
- 
-## Cách thực hiện :
- * Xây dựng app trên các nền tảng mobile.
