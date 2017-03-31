@@ -1,4 +1,4 @@
- <a href="http://nmcntt2-cntn2016.github.io/unnamed">Website</a>
+ <a href="http://nmcntt2-cntn2016.github.io/unnamed">Website: http://nmcntt2-cntn2016.github.io/unnamed</a>
 <h1 align="center">TEAM UNNAMED</h1>
 
 <table>
@@ -36,8 +36,9 @@
 * Một số app và trang web (ChemLab, phET interactive simulations...) có các tính năng thí nghiệm nhưng khó sử dụng, không trực quan và sử dụng nhiều thuật ngữ chuyên ngành.
 
 ## Mục đích :
-* Giúp các bạn học sinh, sinh viên tiết kiệm thời gian và tăng sự hứng thú khi học hóa.
-* Giúp tiết kiệm chi phí xây dựng phòng thí nghiệm, mua các chất hóa học.
+* Giúp học sinh, sinh viên tiết kiệm thời gian và tăng sự hứng thú khi học hóa, học tập tốt hơn.
+* Giúp học sinh, sinh viên tiếp cận, làm quen với thực hành thí nghiệm hoá học, tránh lý thuyết suông.
+* Giúp tiết kiệm chi phí xây dựng phòng thí nghiệm, mua các chất hóa học; giảm tai nạn đáng tiếc.
 
 ## Tính năng :
 * Cung cấp công cụ học tập có các chức năng:
@@ -47,9 +48,11 @@
 	* Diễn đàn trao đổi kiến thức.
 	* Tìm cách điều chế từ chất này qua chất khác.
 	* Phân biệt các chất được nhập vào ( nếu được ).
+	
 ## Cách thực hiện :
+
 ## Giải pháp để dự án tồn tại:
 * Đăng dự án lên Kickstarter để tìm nguồn kinh phí thuê designer vẽ các ảnh gif để mô tả các phản ứng hóa học, thuê người nhập liệu. Dự đoán dự án sẽ được đưa vào hoạt động sau 3 tháng. Nếu không kiếm đủ tiền để thuê người thì nhóm sẽ tự làm các công việc đó, dự đoán sẽ đưa vào hoạt động sau 8 tháng.
 * Sau khi đã hoạt động thì có thêm tính năng để người dùng có thể đóng góp các phản ứng và các hình ảnh thí nghiệm. Sẽ có một đội ngũ chuyên kiểm duyệt nội dung do người dùng đóng góp.
 * Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
-* Trang web sẽ hoàn toàn miễn phí và nhắm đến đối tượng người dùng là học sinh (80%) và giáo viên (20%).
+* Trang web sẽ hoàn toàn miễn phí và nhắm đến đối tượng người dùng là học sinh (80%) và giáo viên (20%), chủ yếu ở Việt Nam.
