@@ -48,5 +48,7 @@
 	* Tìm cách điều chế từ chất này qua chất khác.
 	* Phân biệt các chất được nhập vào ( nếu được ).
 ## Cách thực hiện :
-
+## Giải pháp để dự án tồn tại:
+* Ban đầu tạo ra 
+* Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
 
