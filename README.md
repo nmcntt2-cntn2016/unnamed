@@ -49,6 +49,7 @@
 	* Phân biệt các chất được nhập vào ( nếu được ).
 ## Cách thực hiện :
 ## Giải pháp để dự án tồn tại:
-* Ban đầu tạo ra 
+* Đăng dự án lên Kickstarter để tìm nguồn kinh phí thuê designer vẽ các ảnh gif để mô tả các phản ứng hóa học, thuê người nhập liệu. Dự đoán dự án sẽ được đưa vào hoạt động sau 3 tháng. Nếu không kiếm đủ tiền để thuê người thì nhóm sẽ tự làm các công việc đó, dự đoán sẽ đưa vào hoạt động sau 8 tháng.
+* Sau khi đã hoạt động thì có thêm tính năng để người dùng có thể đóng góp các phản ứng và các hình ảnh thí nghiệm. Sẽ có một đội ngũ chuyên kiểm duyệt nội dung do người dùng đóng góp.
 * Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
-
+* Trang web sẽ hoàn toàn miễn phí và nhắm đến đối tượng người dùng là học sinh (80%) và giáo viên (20%).
