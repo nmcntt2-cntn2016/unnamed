@@ -61,7 +61,6 @@
 		* ORM (Object Relational Mapping): Bookshelf.
 		* SQL builder: Knex.
 	* Database: MySQL.
-* Một mẫu ví dụ cho ORM:
 * Các thuật toán, cấu trúc dữ liệu sẽ áp dụng:
 	* Cân bằng phương trình: Sử dụng thuật Gauss-Jordan và chạy for trong trường hợp thiếu phương trình để tìm ra các nghiệm (hệ số 	của phương trình).
 	* Sử dụng Trie (cây tiền tố) để tìm kiếm một chuỗi chất (hoặc phương trình). Có các lợi ích sau:
