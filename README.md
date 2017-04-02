@@ -72,3 +72,5 @@
 * Sau khi đã hoạt động thì có thêm tính năng để người dùng có thể đóng góp các phản ứng và các hình ảnh thí nghiệm. Sẽ có một đội ngũ chuyên kiểm duyệt nội dung do người dùng đóng góp.
 * Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
 * Trang web sẽ hoàn toàn miễn phí và nhắm đến đối tượng người dùng là học sinh (80%) và giáo viên (20%), chủ yếu ở Việt Nam.
+
+ <img src="http://i.imgur.com/QTIHTry.jpg" align="center">
