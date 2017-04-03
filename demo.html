@@ -28,12 +28,16 @@ background-repeat: no-repeat;
    border: 2px solid #4CAF50;
    border-radius: 4px;
 }
+.buttona:onkeydown{
+	
+}
 .buttona:hover {
 -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     background-color: #4CAF50; /* Green */
     color: white;
 }
+
 input[type=text] {
     width: 500px;
     height : 50px;
@@ -83,7 +87,10 @@ input[type=text]:focus {
   </head>
   <body>
 	<script>
-        
+    
+	
+
+
 	function chuanhoa(raw_st) {
 		var res = "";
         var i = 0;
@@ -95,43 +102,59 @@ input[type=text]:focus {
 		return res;
 	}
 	function Click_Search() {
-
-        //MOVING
-        div_move = document.getElementById("search_form");
-        logo_move = document.getElementById("logo");
-        logo2 = document.getElementById("logo2");
-        content = document.getElementById("main_content");
-
-        content.style.display = "block";
-        content.style.position = "absolute";
-        content.style.top = "60px";
-        logo2.style.display = "inline";
-        div_move.style.top = "5px";
-        logo_move.style.display = "none";
-
-        // SEARCHING
 		var st = chuanhoa(document.getElementById("_search").value);
-		var ele = [];
-		var fir = 0;
-		for (i = 0 ; i<st.length; i++)
-			if (st[i]==' ') {
-				ele.push(st.slice(fir,i+1));
-				fir = i+1;
-			}
-		document.getElementById("lk_hc").innerHTML = "Các chất có trong input : " + ele;
+		// Checking
+		if (st.length>1)
+		{
+			//MOVING
+			div_move = document.getElementById("search_form");
+			logo_move = document.getElementById("logo");
+			logo2 = document.getElementById("logo2");
+			content = document.getElementById("main_content");
+
+			content.style.display = "block";
+			content.style.position = "absolute";
+			content.style.top = "60px";
+			logo2.style.display = "inline";
+			div_move.style.top = "5px";
+			logo_move.style.display = "none";
+
+			// SEARCHING
+			var st = chuanhoa(document.getElementById("_search").value);
+			var ele = [];
+			var fir = 0;
+			for (i = 0 ; i<st.length; i++)
+				if (st[i]==' ') {
+					ele.push(st.slice(fir,i+1));
+					fir = i+1;
+				}
+			document.getElementById("lk_hc").innerHTML = "Các chất có trong input : " + ele;
+		}
+        
+		
+		
+
 
 	}
+
+		function runScript(e) {
+			if (e.keyCode == 13) {
+				Click_Search();
+				return false;
+			}
+		}
+
 	</script>
     
     <div  id="search_form" style="position: absolute; top: 30%; left: 0; right: 0;" >
         <div id="logo" style = "text-align: center"><img src="http://i.imgur.com/sHgQKoD.png"></div>
         <div style = "text-align: center">
              <a href="" onclick="dummy(0);return false;" ><img id="logo2" style= "vertical-align:middle; display: none; width: 200px; height : auto;" src="http://i.imgur.com/sHgQKoD.png"></a>
-            <input type="text" id="_search" placeholder="Fill me !	">
-	        <button class="buttona" onclick="Click_Search()">GO</button>
+            <input type="text" id="_search" placeholder="Fill me !	" onkeypress="return runScript(event)" />>
+	        <button class="buttona" onclick="Click_Search()">→</button>
         <div>
     </div>
-    <div id="main_content" style = "display = none; background : white; width: 100%;" >
+    <div id="main_content" style = "display : none; background : white; width: 100%; height : 600px;" >
 	    <p id="lk_hc"></p>
         <p id="lk_pt"></p>
     </div>
