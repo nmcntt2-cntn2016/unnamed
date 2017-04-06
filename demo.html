@@ -40,7 +40,7 @@ background-repeat: no-repeat;
     color: white;
 }
 
-input[type=text] {
+.InputB {
     width: 90px;
     height : 50px;
     box-sizing: border-box;
@@ -54,7 +54,7 @@ input[type=text] {
 
 }
 
-input[type=text]:focus {
+.InputB:focus {
     border: 1.5px solid #2B90F5;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -255,6 +255,12 @@ input::-webkit-calendar-picker-indicator {
                 $('#' + id).remove();
             }
         }
+        function checkSize(name) {
+            box = document.getElementById(name);
+            if (box.value.length>=8) {box.style.width = "150px";}
+            if (box.value.length>5&&box.value.length<8) {box.style.width = "130px";}
+            if (box.value.length<=5) {box.style.width = "90px";}
+        }
         function addInputBox(){
             if (sl<=5) {
             sl++;
@@ -262,8 +268,8 @@ input::-webkit-calendar-picker-indicator {
 
             var BDivId = 'BDiv' + indexInput;
             var inputId = '#' + BDivId + ' input';
-
-            var appendString = '<div id="' + BDivId + '"class="wrapper" style="text-align: center;"><input type="text" id="InputBox" class="InputB" onkeypress="return runScript(event)" list = "suggestions"/><span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon" style = "top : 50%;"></span></div>';
+            var InputBox = "InputBox" + indexInput;
+            var appendString = '<div id="' + BDivId + '"class="wrapper" style="text-align: center;"><input type="text" id="'+InputBox+'" class="InputB" onkeypress="return runScript(event)" onchange="checkSize(\''+InputBox+'\')" onkeyup="checkSize(\''+InputBox+'\')" list = "suggestions"/><span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon" style = "top : 50%;"></span></div>';
             parrent.append(appendString);
             indexInput++;
 
