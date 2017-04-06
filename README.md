@@ -1,6 +1,6 @@
-<h1> <a href="http://nmcntt2-cntn2016.github.io/unnamed"> -- WEBSITE -- </a></h1>
-<h1> <a href="http://nmcntt2-cntn2016.github.io/unnamed/demo.html"> -- DEMO --  </a></h1>
-<h1 align="center">TEAM UNNAMED</h1>
+<h2 align="center"> <a href="http://nmcntt2-cntn2016.github.io/unnamed"> -- WEBSITE -- </a></h2>
+<h2 align="center"> <a href="http://nmcntt2-cntn2016.github.io/unnamed/demo.html"> -- DEMO --  </a></h2>
+<h2 align="center">TEAM UNNAMED</h1>
 
 <table>
 	<tr>
