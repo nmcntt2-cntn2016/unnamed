@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.ico" />
 
     <title>SwiftCHEM</title>
@@ -128,6 +129,25 @@ input::-webkit-calendar-picker-indicator {
 </style>
   </head>
   <body>
+
+
+   <nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			Menu
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="#0" class="active"><span>Demo 1</span></a></li>
+			<li><a href="./demo2.html"><span>Demo 2</span></a></li>
+			<li><a href="#0"><span>Demo 3</span></a></li>
+			<li><a href="#0"><span>Demo 4</span></a></li>
+			<li><a href="#0"><span>DONATE</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+
 
     <div  id="search_form" style="position: absolute; top: 10%; left: 0; right: 0;" >
         <div id="logo" style = "text-align: center"><img src="http://i.imgur.com/sHgQKoD.png"></div>
@@ -315,6 +335,8 @@ input::-webkit-calendar-picker-indicator {
 
 
 	</script>
+    <script src="js/main.js"></script> 
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
   </body>
 
 </html>
