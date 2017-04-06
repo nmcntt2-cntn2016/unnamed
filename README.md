@@ -63,11 +63,8 @@
 	* Database: MySQL.
 * Các thuật toán, cấu trúc dữ liệu sẽ áp dụng:
 	* Cân bằng phương trình: Sử dụng thuật Gauss-Jordan và chạy for trong trường hợp thiếu phương trình để tìm ra các nghiệm (hệ số 	của phương trình).
-	* Sử dụng Trie (cây tiền tố) để tìm kiếm một chuỗi chất (hoặc phương trình). Có các lợi ích sau:
-		* Thời gian tìm kiếm nhỏ. Thời gian tìm kiếm chỉ đòi hỏi O(m) với m phép so sánh ký tự.
-		* Chỉ cần lưu trữ một lần nên sử dụng ít bộ nhớ.
  
-## Giải pháp để dự án tồn tại:
+## Cách thức hoạt động và phát triển:
 * Đăng dự án lên Kickstarter để tìm nguồn kinh phí thuê designer vẽ các ảnh gif để mô tả các phản ứng hóa học, thuê người nhập liệu. Dự đoán dự án sẽ được đưa vào hoạt động sau 3 tháng. Nếu không kiếm đủ tiền để thuê người thì nhóm sẽ tự làm các công việc đó, dự đoán sẽ đưa vào hoạt động sau 8 tháng.
 * Sau khi đã hoạt động thì có thêm tính năng để người dùng có thể đóng góp các phản ứng và các hình ảnh thí nghiệm. Sẽ có một đội ngũ chuyên kiểm duyệt nội dung do người dùng đóng góp.
 * Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
