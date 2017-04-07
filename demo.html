@@ -115,10 +115,13 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .remove-icon {
-    top: -14px;
-    right: 22px;
+    right : 15%;
+    color : #120000;
 }
-
+.remove-icon:hover {
+    color : #5a0000;
+    font-size: 105%;
+}
 .result{
     font-size: 15;
     font-size: xx-large;
@@ -286,7 +289,7 @@ input::-webkit-calendar-picker-indicator {
             var BDivId = 'BDiv' + indexInput;
             var inputId = '#' + BDivId + ' input';
             var InputBox = "InputBox" + indexInput;
-            var appendString = '<div id="' + BDivId + '"class="wrapper" style="text-align: center;"><input type="text" id="'+InputBox+'" class="InputB" onkeypress="return runScript(event)" onchange="checkSize(\''+InputBox+'\')" onkeyup="checkSize(\''+InputBox+'\')" list = "suggestions"/><span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon" style = "top : 50%;"></span></div>';
+            var appendString = '<div id="' + BDivId + '"class="wrapper" style="text-align: center;"><input type="text" id="'+InputBox+'" class="InputB" onkeypress="return runScript(event)" onchange="checkSize(\''+InputBox+'\')" onkeyup="checkSize(\''+InputBox+'\')" list = "suggestions"/><span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon"></span></div>';
             parrent.append(appendString);
             indexInput++;
 
