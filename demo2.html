@@ -90,7 +90,7 @@
          background: white; /* For browsers that do not support gradients */
          }
          .remove-icon {
-         right : 15%;
+         right : 20%;
          color : #120000;
          }
          .remove-icon:hover {
@@ -248,7 +248,8 @@
              box = document.getElementById(name);
              if (box.value.length>=8) {box.style.width = "150px";}
              if (box.value.length>5&&box.value.length<8) {box.style.width = "130px";}
-             if (box.value.length<=5) {box.style.width = "100px";}
+             if (box.value.length<=5&&box.value.length>2) {box.style.width = "100px";}
+             if (box.value.length<=2 ) {box.style.width = "70px";}
          }
          function addInputBox(){
              if (sl<=5) {
