@@ -1882,7 +1882,7 @@ div[class*="col"]:last-child .contacts-entry{border: none;}
 .blog-landing-entry-3 .left .valign-text-wrapper{position: relative; z-index: 1;}
 .blog-landing-entry-3 .left .valign-text-wrapper .align{max-width: 645px; margin: 0 100px; float: right; text-align: right;}
 .blog-landing-entry-3 .right{width: 50%; position: relative; left: 50%;}
-.blog-landing-entry-3 .right .text{padding-left: 110px; padding-right: 15px; float: left; position: relative; width: 58%;}
+.blog-landing-entry-3 .right .text{padding-left: 50px; padding-right: 15px; float: left; position: relative; width: 100%;}
 .blog-landing-entry-3 .right .cell-view{height: 595px; padding: 30px 0;}
 .blog-landing-entry-3 .right .avatar-wrapper{width: 42%; position: absolute; right: 0; top: 50%; margin-top: -75px; text-align: center;}
 .blog-landing-entry-3 .right .avatar-wrapper img{display: inline-block; vertical-align: bottom; border-radius: 50%; -webkit-border-radius: 50%; width: 105px; height: 105px;}
