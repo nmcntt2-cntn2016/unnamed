@@ -103,7 +103,7 @@
          text-align: -webkit-center
          }
          dl.codebox {
-            background-color: #809DC4;
+            background-color: #a7bad4;
             padding:5px;
             font-family: calibri;
             font-size:11px;
@@ -113,12 +113,11 @@
         dl.codebox dt {
             font-size:11px;
             font-weight:700;
-            color:#100213;
+            color: black;
             text-align: left;
             margin-bottom:3px;
-            text-transform:uppercase;
             font-family:Calibri;
-            border-bottom: 1px dotted #0f0f0f;
+            border-bottom: 1px dotted #000000;
         }
       </style>
    </head>
@@ -161,16 +160,16 @@
                <dl class="codebox" style=" width : 700px; cursor: pointer;" onclick="this.getElementsByTagName('div')[0].style.display=((this.getElementsByTagName('div')[0].style.display=='none')?'':'none');">
                     <dt style = "margin : 10px 10px;font-size: 30px;">FeS<sub>2</sub> → SO<sub>2</sub></dt>
                     <dd>
-                        <div style="display:none; font-size : 20px; margin : 10px 10px;">
+                        <div style="display:none; font-size : 20px; margin : 10px 10px; color:black;">
                             <div>4 FeS<sub>2</sub> + 11 O<sub>2</sub> → 2 Fe<sub>2</sub>SO<sub>3</sub></div>
                         </div>
                     </dd>
                 </dl>
-                <div style = "height : 10px"></div>
+                <div style = "height : 20px"></div>
                  <dl class="codebox" style=" width : 700px; cursor: pointer;" onclick="this.getElementsByTagName('div')[0].style.display=((this.getElementsByTagName('div')[0].style.display=='none')?'':'none');">
                     <dt style = "margin : 10px 10px;font-size: 30px;">SO<sub>2</sub> → H<sub>2</sub>SO<sub>4</sub></dt>
                     <dd>
-                        <div style="display:none; font-size : 20px; margin : 10px 10px;">
+                        <div style="display:none; font-size : 20px; margin : 10px 10px; color : black;">
                             <div>2 SO<sub>2</sub> + O<sub>2</sub> → 2 SO<sub>3</sub></div>
                             <div>SO<sub>3</sub> + H<sub>2</sub>O → H<sub>2</sub>SO<sub>4</sub><div>
                         </div>
@@ -182,16 +181,6 @@
       <script src="js/jquery-2.1.4.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
-         // function chuanhoa(raw_st) {
-         //     var res = "";
-         //     var i = 0;
-         //     while (raw_st[i]==" ") i++;
-         //     for ( i; i<raw_st.length; i++)
-         //         if ((raw_st[i]==" "||raw_st[i]=="+")&&res[res.length-1]!=" ") res+=" ";
-         //         else if (raw_st[i]!=" "&&raw_st[i]!="+"&&raw_st[i]!="-"&&raw_st[i]!=">") res+=raw_st[i];
-         //     if (res[res.length-1]!=" ") res+=" ";
-         //     return res;
-         // }
          
          function Click_Search() {
              var indexInput = 1;
