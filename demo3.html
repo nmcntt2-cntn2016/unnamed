@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/nav.css" rel="stylesheet">
+      <link rel="shortcut icon" href="img/favicon.ico" />
+      <title>SwiftCHEM</title>
+      <style>
+         body  {
+         background-image: url("http://i.imgur.com/ElmwGmK.jpg");
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-color: #464646;
+         }
+         .buttona {
+         margin-left : 10px;
+         background-color: white;/* Green */
+         border: none;
+         color: #4CAF50;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         display: inline;
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         border: 2px solid #4CAF50;
+         border-radius: 4px;
+         }
+         .buttona:hover {
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         background-color: #4CAF50; /* Green */
+         color: white;
+         }
+         .InputB {
+         width: 100px;
+         height : 50px;
+         box-sizing: border-box;
+         border: 0.5px solid #ccc;
+         border-radius: 4px;
+         font-size: 16px;
+         background-color: white;
+         padding: 2px 2px 2px 10px;
+         -webkit-transition: all 0.2s ease-in-out;
+         transition: all 0.2s ease-in-out;
+         }
+         .InputB:focus {
+         border: 1.5px solid #2B90F5;
+         -webkit-transition: all 0.2s ease-in-out;
+         transition: all 0.2s ease-in-out;
+         }
+         /* Tooltip container */
+         /*.tooltip {
+         position: relative;
+         display: inline-block;
+         border-bottom: 1px dotted black;
+         }*/
+         .tooltip-inner {
+         max-width: 200px;
+         padding: 3px 8px;
+         color: white;
+         text-align: center;
+         text-decoration: none;
+         background-color: rgba(17,20,2,1);
+         border-radius: 4px;
+         }
+         .tooltip:hover .tooltiptext {
+         visibility: visible;
+         }
+         .wrapper {
+         /*border:1px solid #000;*/
+         display:inline-block;
+         position:relative;
+         }
+         .InputB {
+         padding-right:30px; /* button padding */
+         }
+         input::-webkit-calendar-picker-indicator {
+         display: none;
+         }
+         #main_content {
+         background: white; /* For browsers that do not support gradients */
+         }
+         .remove-icon {
+         right : 20%;
+         color : #120000;
+         }
+         .remove-icon:hover {
+         color : #5a0000;
+         font-size: 105%;
+         }
+         .result{
+         font-size: 15;
+         font-size: xx-large;
+         text-align: -webkit-center
+         }
+         dl.codebox {
+            background-color: #809DC4;
+            padding:5px;
+            font-family: calibri;
+            font-size:11px;
+            margin : auto;
+        }
+
+        dl.codebox dt {
+            font-size:11px;
+            font-weight:700;
+            color:#100213;
+            text-align: left;
+            margin-bottom:3px;
+            text-transform:uppercase;
+            font-family:Calibri;
+            border-bottom: 1px dotted #0f0f0f;
+        }
+      </style>
+   </head>
+   <body>
+      <nav class="cd-stretchy-nav">
+         <a class="cd-nav-trigger" href="#0">
+         Menu
+         <span aria-hidden="true"></span>
+         </a>
+         <ul>
+            <li><a href="./demo.html" ><span class="stk">Demo 1</span></a></li>
+            <li><a href="./demo2.html"><span class="active stk">Demo 2</span></a></li>
+            <li><a href="./demo3.html" class="active" ><span class="stk">Demo 3</span></a></li>
+            <li><a href="./demo4.html"><span class="stk">Demo 4</span></a></li>
+            <li><a href="#0"><span class="stk">DONATE</span></a></li>
+         </ul>
+         <span aria-hidden="true" class="stretchy-nav-bg"></span>
+      </nav>
+      <div  id="search_form" style="position: absolute; top: 10%; left: 0; right: 0;" >
+         <div id="logo" style = "text-align: center"><img src="http://i.imgur.com/sHgQKoD.png"></div>
+         <div id = "InputDiv" style = "text-align: center">
+            <div id="title" style="color: white; font-size: 30px;"> Nhập các chất </div>
+            <a href="" onclick="dummy(0);return false;" ><img id="logo2" style= "vertical-align:middle; display: none; width: 200px; height : auto;" src="http://i.imgur.com/sHgQKoD.png"></a>
+            <div id = "emtydiv" style = "height: 20px"></div>
+            <div id="BoxDiv" style="text-align: center; display: inline;">
+               <!--<div id="BDiv"class="wrapper" style="text-align: center;">
+                  <input type="text" id="InputBox" class="InputB" onkeypress="return runScript(event)" list = "suggestions"/>
+                  <span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon"></span>
+                  </div>-->
+            </div>
+            <datalist id="suggestions" >
+            </datalist>
+            <button onclick="addInputBox()"> + </button>
+            <button class="buttona" onclick="Click_Search()"> ➦ </button>
+         </div>
+         <div id="main_content" style = "display : none; width: 100%; height : 600px;" >
+            <div><h1 style="left: 30%; position: absolute;">Kết Quả Là</h1></div>
+            
+            <div style = "left : 25%; top: 20%; position : absolute;">
+               <dl class="codebox" style=" width : 700px; cursor: pointer;" onclick="this.getElementsByTagName('div')[0].style.display=((this.getElementsByTagName('div')[0].style.display=='none')?'':'none');">
+                    <dt style = "margin : 10px 10px;font-size: 30px;">FeS<sub>2</sub> → SO<sub>2</sub></dt>
+                    <dd>
+                        <div style="display:none; font-size : 20px; margin : 10px 10px;">
+                            <div>4 FeS<sub>2</sub> + 11 O<sub>2</sub> → 2 Fe<sub>2</sub>SO<sub>3</sub></div>
+                        </div>
+                    </dd>
+                </dl>
+                <div style = "height : 10px"></div>
+                 <dl class="codebox" style=" width : 700px; cursor: pointer;" onclick="this.getElementsByTagName('div')[0].style.display=((this.getElementsByTagName('div')[0].style.display=='none')?'':'none');">
+                    <dt style = "margin : 10px 10px;font-size: 30px;">SO<sub>2</sub> → H<sub>2</sub>SO<sub>4</sub></dt>
+                    <dd>
+                        <div style="display:none; font-size : 20px; margin : 10px 10px;">
+                            <div>2 SO<sub>2</sub> + O<sub>2</sub> → 2 SO<sub>3</sub></div>
+                            <div>SO<sub>3</sub> + H<sub>2</sub>O → H<sub>2</sub>SO<sub>4</sub><div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         // function chuanhoa(raw_st) {
+         //     var res = "";
+         //     var i = 0;
+         //     while (raw_st[i]==" ") i++;
+         //     for ( i; i<raw_st.length; i++)
+         //         if ((raw_st[i]==" "||raw_st[i]=="+")&&res[res.length-1]!=" ") res+=" ";
+         //         else if (raw_st[i]!=" "&&raw_st[i]!="+"&&raw_st[i]!="-"&&raw_st[i]!=">") res+=raw_st[i];
+         //     if (res[res.length-1]!=" ") res+=" ";
+         //     return res;
+         // }
+         
+         function Click_Search() {
+             var indexInput = 1;
+             var BDivId = 'BDiv' + indexInput;
+             var inputId = '#' + BDivId + ' input';
+             indexInput++;
+         
+             //var result = $("#Result");
+             $('[data-toggle="tooltip"]').tooltip();
+         
+             var input = $(inputId);
+             var inputBoxs = $("#BoxDiv input");
+             // Checking
+             inputBoxs.each(function(){
+                 if (this.value.length>0)
+                 {
+                     $('#title').remove();
+                     //MOVING
+                     div_move = document.getElementById("search_form");
+                     logo_move = document.getElementById("logo");
+                     logo2 = document.getElementById("logo2");
+                     content = document.getElementById("main_content");
+                     emty_div = document.getElementById("emtydiv");
+         
+                     emty_div.style.display = "none";
+                     content.style.display = "block";
+                     content.style.position = "absolute";
+                     content.style.top = "60px";
+                     logo2.style.display = "inline";
+                     div_move.style.top = "5px";
+                     logo_move.style.display = "none";
+         
+                     //result.text("BaCl2 + H2SO4 -> BaSO4 + 2HCl");
+         
+         
+                     // SEARCHING
+                     // var st = chuanhoa(document.getElementById("_search").value);
+                     // var ele = [];
+                     // var fir = 0;
+                     // for (i = 0 ; i<st.length; i++)
+                     //     if (st[i]==' ') {
+                     //         ele.push(st.slice(fir,i+1));
+                     //         fir = i+1;
+                     //     }
+                     // document.getElementById("lk_hc").innerHTML = "Các chất có trong input : " + ele;
+                 }
+             })
+         
+         }
+         
+         function runScript(e) {
+             if (e.keyCode == 13) {
+                 Click_Search();
+                 return false;
+             }
+         };
+         
+         // function isChemical(){
+         //     var
+         // }
+         
+         function addSuggestion(chats) {
+             var parrent = $('#suggestions');
+             chats.forEach(function(chat) {
+                 var appendString = '<option value=' + chat + '>';
+                 parrent.append(appendString);
+             });
+         }
+         
+         var indexInput = 1;
+         var sl = 1;
+         function removeBox(self){
+             if (sl>3) {
+                 sl--;
+                 var id = ($(self).parent().attr('id'));
+                 $('#' + id).remove();
+             }
+         }
+         function checkSize(name) {
+             box = document.getElementById(name);
+             if (box.value.length>=8) {box.style.width = "150px";}
+             if (box.value.length>5&&box.value.length<8) {box.style.width = "130px";}
+             if (box.value.length<=5&&box.value.length>2) {box.style.width = "100px";}
+             if (box.value.length<=2 ) {box.style.width = "70px";}
+         }
+         function addInputBox(){
+             if (sl<=5) {
+             sl++;
+             var parrent = $('#BoxDiv')
+         
+             var BDivId = 'BDiv' + indexInput;
+             var inputId = '#' + BDivId + ' input';
+             var InputBox = "InputBox" + indexInput;
+             var appendString = '<div id="' + BDivId + '"class="wrapper" style="text-align: center;"><input type="text" id="'+InputBox+'" class="InputB" onkeypress="return runScript(event)" onchange="checkSize(\''+InputBox+'\')" onkeyup="checkSize(\''+InputBox+'\')" list = "suggestions"/><span onclick="removeBox(this)" class="glyphicon glyphicon-remove remove-icon"></span></div>';
+             parrent.append(appendString);
+             indexInput++;
+         
+             var input = $(inputId);
+             input.keypress(function(event) {
+                 if(event.charCode == 40 || event.charCode == 41) return true;
+                 if(event.charCode >= 33 && event.charCode <= 48 || event.charCode >= 58 && event.charCode <= 64 ||
+                 event.charCode >= 91 && event.charCode <= 96 ||event.charCode >= 123 && event.charCode <= 126 ) {
+                     return false;
+                 }
+         
+                 return true;
+             });
+             var div = $(BDivId);
+             var spanSelectString = '#' + BDivId + ' span';
+             // div.mouseenter(function() {
+             //     $(spanSelectString).show();
+             // });
+         
+             // input.mouseleave(function() {
+             //     $(spanSelectString).hide();
+             // });
+             
+         }
+         }
+         
+         $(document).ready(function() {
+             addInputBox();
+             addInputBox();
+         
+             // Add suggestions
+             var chats = ['Na', 'K', 'Ba', 'Li', 'KOH', 'K2SO4', 'KNO3', 'KCl', 'CuSO4', 'CuCl2', 'H2O', 'CaCO3', 'CaSO4', 'BaSO4', 'Ca', 'HCl', 'BaCl2', 'H2SO4'];
+             addSuggestion(chats);
+             // Add key press event. Preventing other keys.
+             var input = $("#BoxDiv input");
+             input.keypress(function(event) {
+                 if(event.charCode == 40 || event.charCode == 41) return true;
+                 if(event.charCode >= 33 && event.charCode <= 48 || event.charCode >= 58 && event.charCode <= 64 ||
+                 event.charCode >= 91 && event.charCode <= 96 ||event.charCode >= 123 && event.charCode <= 126 ) {
+                     return false;
+                 }
+         
+                 return true;
+             });
+         
+         });
+         
+         
+      </script>
+      <script src="js/main.js"></script> 
+      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+   </body>
+</html>
