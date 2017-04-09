@@ -26,8 +26,7 @@
 	</table>
 	
 ## SwiftCHEM - Trang web mô tả thí nghiệm hóa học
- <img src="http://i.imgur.com/aFbfcOb.jpg" align="center">
- 
+<p align="center"><img src="http://i.imgur.com/aFbfcOb.jpg"></p> 
 
  
 ## Thực trạng :
@@ -43,11 +42,10 @@
 
 ## Tính năng :
 * Cung cấp công cụ học tập có các chức năng:
-	* Mô tả các hiện tượng, đặc điểm của thí nghiệm một cách trực quan thông qua hình ảnh động / video.
-	* Tìm kiếm thông tin của một chất nhất định.
-	* Tìm kiếm và tự động cân bằng/ chỉnh sửa hệ số của phương trình được nhập vào.
-	* Diễn đàn trao đổi kiến thức.
-	* Tìm cách điều chế từ chất này qua chất khác.
+	* Mô tả hiện tượng một cách trực quan bằng ảnh động / video.
+	* Tự động cân bằng và hiển thị thông tin các chất liên quan.
+	* Điều chế chất mới từ chất ban đầu.
+	* Cung cấp diễn đàn trực tuyến giúp người học có thể trao đổi được với nhau
 	* Phân biệt các chất được nhập vào ( nếu được ).
 	
 ## Cách thực hiện :
@@ -63,10 +61,15 @@
 		* SQL builder: Knex.
 	* Database: MySQL.
 * Các thuật toán, cấu trúc dữ liệu sẽ áp dụng:
-	* Cân bằng phương trình: Sử dụng thuật Gauss-Jordan và chạy for trong trường hợp thiếu phương trình để tìm ra các nghiệm (hệ số 	của phương trình).
+	* Cân bằng phương trình: Sử dụng thuật Gauss-Jordan để giải hệ phương trình tuyến tính tìm ra hệ số cho các chất . Sau đó tìm hệ số thích hợp nhân lên để khử mẫu số cho bộ nghiệm.
+	<p align="center"><img src="https://media.giphy.com/media/3o7btVyBxOHteapl7y/giphy.gif"></p>
+	* Tìm cách điều chế : <writing ...>
+* Do các chất hóa học thường có một số dạng như loại dung dịch, rắn, hơi, ... và chỉ khác nhau về màu sắc, hiện tượng nên việc tạo các ảnh động mô tả hiện tượng hóa học có thể hoàn thành nhanh chóng bằng tool team sẽ tự làm đối với các phản ứng mang tính tương đồng ví dụ như BaSO4 + CuCl2 và NaSO4 + CuCl2. Ngoài ra đối với các phản ứng có đặc trưng riêng thì sẽ được làm riêng.
+
+
  
 ## Cách thức hoạt động và phát triển:
-* Đăng dự án lên Kickstarter để tìm nguồn kinh phí thuê designer vẽ các ảnh gif để mô tả các phản ứng hóa học, thuê người nhập liệu. Dự đoán dự án sẽ được đưa vào hoạt động sau 3 tháng. Nếu không kiếm đủ tiền để thuê người thì nhóm sẽ tự làm các công việc đó, dự đoán sẽ đưa vào hoạt động sau 8 tháng.
+* Đăng dự án lên Kickstarter để tìm nguồn kinh phí thuê người nhập liệu. Dự đoán dự án sẽ được đưa vào hoạt động sau 3 tháng. Nếu không kiếm đủ tiền để thuê người thì nhóm sẽ tự làm các công việc đó, dự đoán sẽ đưa vào hoạt động sau 8 tháng.
 * Sau khi đã hoạt động thì có thêm tính năng để người dùng có thể đóng góp các phản ứng và các hình ảnh thí nghiệm. Sẽ có một đội ngũ chuyên kiểm duyệt nội dung do người dùng đóng góp.
 * Tạo một tài khoản ngân hàng để người sử dụng có thể donate được giúp trang web có thể tiếp tục được hoạt động.
 * Trang web sẽ hoàn toàn miễn phí và nhắm đến đối tượng người dùng là học sinh (80%) và giáo viên (20%), chủ yếu ở Việt Nam.
