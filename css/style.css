@@ -1893,7 +1893,7 @@ div[class*="col"]:last-child .contacts-entry{border: none;}
 	.blog-landing-entry-3.new-view .left{left: 50%;}
 	.blog-landing-entry-3.new-view .right{left: 0;}
 	.blog-landing-entry-3.new-view .left .valign-text-wrapper .align{float: left; text-align: left;}
-	.blog-landing-entry-3.new-view .right .text{padding-right: 110px; padding-left: 15px; float: right; text-align: right;}
+	.blog-landing-entry-3.new-view .right .text{padding-left: 50px; padding-right: 30px; float: left; text-align: left;}
 	.blog-landing-entry-3.new-view .right .avatar-wrapper{right: auto; left: 0;}
 }
 /* Tablets (>=768px)*/
