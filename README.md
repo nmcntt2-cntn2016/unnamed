@@ -63,7 +63,11 @@
 * Các thuật toán, cấu trúc dữ liệu sẽ áp dụng:
 	* Cân bằng phương trình: Sử dụng thuật Gauss-Jordan để giải hệ phương trình tuyến tính tìm ra hệ số cho các chất . Sau đó tìm hệ số thích hợp nhân lên để khử mẫu số cho bộ nghiệm.
 	<p align="center"><img src="https://media.giphy.com/media/3o7btVyBxOHteapl7y/giphy.gif"></p>
-	* Tìm cách điều chế : <writing ...>
+	
+	* Điều chế các chất : Liên kết các phương trình với nhau để tạo ra chuỗi phản ứng điều chế với thuật Depth First Search, ta sẽ tìm với độ sau tối đa là 3. Tức có nghĩa để điều chế từ chất A qua B, ta sẽ sử dụng tối đa 3 phản ứng thôi.
+		* Ta có thể điều chế một dãy các chất (input nhập vào nhiều hơn 2).
+		* Tối ưu bằng cách xem người dùng hay tìm kiếm điều chế chất nào và giữ cố định kết quả đó lại để sử dụng cho sau này.
+		
 * Do các chất hóa học thường có một số dạng như loại dung dịch, rắn, hơi, ... và chỉ khác nhau về màu sắc, hiện tượng nên việc tạo các ảnh động mô tả hiện tượng hóa học có thể hoàn thành nhanh chóng bằng tool team sẽ tự làm đối với các phản ứng mang tính tương đồng ví dụ như BaSO4 + CuCl2 và NaSO4 + CuCl2. Ngoài ra đối với các phản ứng có đặc trưng riêng thì sẽ được làm riêng.
 
 
