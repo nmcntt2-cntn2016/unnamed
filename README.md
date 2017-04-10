@@ -86,8 +86,9 @@
 * Tư duy thuật toán
 * Quản lí dự án
 * Nếu mở rộng ra app cho các thiết bị như PC, phone thì cần:
-** Lập trình Windows
-** Thiết kế giao diện
-** Công nghệ XML và ứng dụng
+	* Lập trình Windows
+	* Thiết kế giao diện
+	* Công nghệ XML và ứng dụng
+
 ## POSTER
 <p align="center"><img src="http://i.imgur.com/LLhycN0.jpg"></p>
