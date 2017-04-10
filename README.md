@@ -80,8 +80,14 @@
 
 ## Các môn học cần thiết để thực hiện dự án
 * Lập trình Web
-* Quản lí cơ sở dữ liệu
-* Nếu mở rộng ra app cho các thiết bị như PC, phone thì cần CN phần mềm
-
+* Hệ quản trị cơ sở dữ liệu
+* An toàn và bảo mật trong hệ thống thông tin
+* Cấu trúc dữ liệu và giải thuật
+* Tư duy thuật toán
+* Quản lí dự án
+* Nếu mở rộng ra app cho các thiết bị như PC, phone thì cần:
+** Lập trình Windows
+** Thiết kế giao diện
+** Công nghệ XML và ứng dụng
 ## POSTER
 <p align="center"><img src="http://i.imgur.com/LLhycN0.jpg"></p>
